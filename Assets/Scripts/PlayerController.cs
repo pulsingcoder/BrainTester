@@ -6,15 +6,15 @@ public class PlayerController : MonoBehaviour
 {
     float lastmoveV;
     float lastmoveH;
-    public float walkSpeed;
+    
     private Animator myAnim;
-    private char facingDir;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         myAnim = GetComponent<Animator>();
-        facingDir = 'd';
+       
     }
 
     // Update is called once per frame
