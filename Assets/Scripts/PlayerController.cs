@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     float lastmoveV;
     float lastmoveH;
+    public Joystick joystick;
+    float moveV = 0f;
+    float moveH = 0f;
     
     private Animator myAnim;
    
@@ -21,8 +24,30 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
-        float moveV = Input.GetAxis("Vertical");
-        float moveH = Input.GetAxis("Horizontal");
+        if (joystick.Vertical >= 0.2f)
+        {
+            moveV = joystick.Vertical;
+        }
+        else if (joystick.Vertical <= -0.2f)
+        {
+            moveV = joystick.Vertical;
+        }
+        else
+        {
+            moveV = 0f;
+        }
+        if (joystick.Horizontal >= 0.2f)
+        {
+            moveH = joystick.Horizontal;
+        }
+        else if (joystick.Horizontal <= -0.2f)
+        {
+            moveH = joystick.Horizontal;
+        }
+        else
+        {
+            moveH = 0f;
+        }
         Vector3 movement = new Vector3(0, 0, 0);
         if ((moveH!=0) && moveV == 0)
         {
@@ -58,6 +83,20 @@ public class PlayerController : MonoBehaviour
             myAnim.SetFloat("Horizontal", 0);
             myAnim.SetFloat("Vertical", 0);
 
+        }
+        /*
+         For touch input
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            touchPosition.z = 0f;
+            transform.position = touchPosition;
+        }*/
+        for (int i=0;i<Input.touchCount;i++)
+        {
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
+            Debug.DrawLine(Vector3.zero, touchPosition, Color.red);
         }
 
 
