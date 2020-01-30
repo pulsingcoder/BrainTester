@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -84,6 +85,7 @@ public class PlayerController : MonoBehaviour
             myAnim.SetFloat("Vertical", 0);
 
         }
+        
         /*
          For touch input
         if (Input.touchCount > 0)
@@ -102,6 +104,18 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Gate")
+        {
+            SceneManager.LoadScene(1);
+        }
+        if (col.gameObject.tag == "Gate2")
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
     void FixedUpdate()
     {
         
