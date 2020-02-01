@@ -109,12 +109,15 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.tag == "Gate")
         {
+            
             SceneManager.LoadScene(1);
+          
         }
         if (col.gameObject.tag == "Gate2")
         {
             SceneManager.LoadScene(0);
         }
+     
     }
     void FixedUpdate()
     {

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3154868054643024739}
   - component: {fileID: 3154868054643024740}
+  - component: {fileID: 1589623846}
   m_Layer: 0
   m_Name: GateWay
   m_TagString: Gate
@@ -57,6 +58,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1589623846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154868054643024738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee76116a63a7054783ec4fc07b3b666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charactor: {fileID: 9182424977035687676, guid: 69aae49f7c0fd5a4faa7d3080aaec26f,
+    type: 3}
 --- !u!1 &3154868054995729246
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +97,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3154868054995729246}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.910766, y: -1.2267827, z: 13.022982}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
