@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    Text text;
+    
+    static float score=0f;
     float lastmoveV;
     float lastmoveH;
     public Joystick joystick;
@@ -100,27 +105,29 @@ public class PlayerController : MonoBehaviour
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
             Debug.DrawLine(Vector3.zero, touchPosition, Color.red);
         }
-
+        text.text = score.ToString();
 
     }
 
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        /*
         if (col.gameObject.tag == "Gate")
         {
             
             SceneManager.LoadScene(1);
           
-        }
+        }*/
         if (col.gameObject.tag == "Gate2")
         {
             SceneManager.LoadScene(0);
         }
      
     }
-    void FixedUpdate()
+    public void Score()
     {
+        score += 10;
         
     }
 }

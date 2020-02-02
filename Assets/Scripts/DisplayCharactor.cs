@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DisplayCharactor : MonoBehaviour
 {
-    public char cha;
+    static char cha = 'A';
     [SerializeField]
     Sprite sprite1;
     [SerializeField]
@@ -17,28 +17,61 @@ public class DisplayCharactor : MonoBehaviour
     Sprite sprite3;
     [SerializeField]
     Sprite spriteC;
-    SpriteRenderer render;
+
+    static SpriteRenderer render;
 
     // Start is called before the first frame update
     void Start()
     {
-        render = GetComponent<SpriteRenderer>();
+       
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        /*
         switch (cha)
         {
-            case '1' : render.sprite = sprite1; break;
-            case '2' : render.sprite = sprite2; break;
-            case '3' : render.sprite = sprite3; break;
-            case 'A' : render.sprite = spriteA; break;
-            case 'B' : render.sprite = spriteB; break;
-            case 'C' : render.sprite = spriteC; break;
+            case '1': render.sprite = sprite1; break;
+            case '2': render.sprite = sprite2; break;
+            case '3': render.sprite = sprite3; break;
+            case 'A': render.sprite = spriteA; break;
+            case 'B': render.sprite = spriteB; break;
+            case 'C': render.sprite = spriteC; break;
 
         }
+        if (cha == '1' || cha == '2'  || cha == '3')
+        {
+            transform.localScale = new Vector3(5f, 5f, 5f);
+        }
+        else
+        {
+            transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+        }
+        print(cha);*/
+    }
+    public void SetChar(char ch)
+    {
+        render = GetComponent<SpriteRenderer>();
+        cha = ch;
+         switch (cha)
+         {
+             case '1': render.sprite = sprite1; break;
+             case '2': render.sprite = sprite2; break;
+             case '3': render.sprite = sprite3; break;
+             case 'A': render.sprite = spriteA; break;
+             case 'B': render.sprite = spriteB; break;
+             case 'C': render.sprite = spriteC; break;
 
+         }
+         if (cha == '1' || cha == '2' || cha == '3')
+         {
+             transform.localScale = new Vector3(5f, 5f, 5f);
+         }
+         else
+         {
+             transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+         }
     }
 }

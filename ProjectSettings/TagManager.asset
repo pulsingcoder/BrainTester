@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Gate
   - Gate2
+  - HouseA
+  - HouseB
+  - HouseC
+  - House1
+  - House2
+  - House3
+  - Number
   layers:
   - Default
   - TransparentFX
