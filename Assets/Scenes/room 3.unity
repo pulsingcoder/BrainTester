@@ -299,6 +299,15 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 104662550}
+    - target: {fileID: 3902107670554478209, guid: 9a102dfe5061caf439ef406fb9671064,
+        type: 3}
+      propertyPath: index
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 954112359, guid: 9a102dfe5061caf439ef406fb9671064, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a102dfe5061caf439ef406fb9671064, type: 3}
 --- !u!1001 &1379146194
@@ -423,11 +432,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 150289407}
-    - target: {fileID: 3975300961522175868, guid: aedd1bacadcf7434b9f713d9cbaf2d48,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Score
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aedd1bacadcf7434b9f713d9cbaf2d48, type: 3}
 --- !u!1 &1486787246

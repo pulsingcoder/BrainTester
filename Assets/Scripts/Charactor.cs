@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Charactor : MonoBehaviour
 {
+    
     public char ch;
     // Start is called before the first frame update
     void Start()

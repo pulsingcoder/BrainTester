@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 3902107670554478209}
   - component: {fileID: 984365816}
   - component: {fileID: 984365815}
+  - component: {fileID: 954112359}
+  - component: {fileID: 954112358}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
+  index: 1
   joystick: {fileID: 0}
 --- !u!50 &984365816
 Rigidbody2D:
@@ -164,3 +167,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13005698, y: 0.16427541}
   m_EdgeRadius: 0
+--- !u!114 &954112359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3902107670554478213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee2fbc97212f47429eb9687eb584c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+--- !u!114 &954112358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3902107670554478213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a30dda9b356cee047bc37c5dc8addc94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

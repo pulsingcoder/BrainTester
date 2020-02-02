@@ -263,6 +263,15 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1992045582}
+    - target: {fileID: 3902107670554478209, guid: 9a102dfe5061caf439ef406fb9671064,
+        type: 3}
+      propertyPath: index
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 954112359, guid: 9a102dfe5061caf439ef406fb9671064, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a102dfe5061caf439ef406fb9671064, type: 3}
 --- !u!114 &954112356 stripped

@@ -484,7 +484,7 @@ PrefabInstance:
     - target: {fileID: 7781122525228572869, guid: 7f601046f42a61741b51d6d3dc04b614,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1166
+      value: -1015
       objectReference: {fileID: 0}
     - target: {fileID: 7781122525228572869, guid: 7f601046f42a61741b51d6d3dc04b614,
         type: 3}
@@ -823,7 +823,7 @@ PrefabInstance:
     - target: {fileID: 6131332354797972658, guid: 0f262f6283c1103409fe2d57d55e5ea9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1191
+      value: -1039.9999
       objectReference: {fileID: 0}
     - target: {fileID: 6131332354797972658, guid: 0f262f6283c1103409fe2d57d55e5ea9,
         type: 3}
@@ -1234,7 +1234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.6, y: 0.5}
-  m_AnchoredPosition: {x: 1277, y: 886}
+  m_AnchoredPosition: {x: 1277, y: 766}
   m_SizeDelta: {x: 893, y: 748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &567518702
@@ -2362,7 +2362,7 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 294
+      value: 462
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -3180,7 +3180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 997, y: 957}
+  m_AnchoredPosition: {x: 997, y: 836.9998}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768436172
@@ -3214,7 +3214,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 0
 --- !u!222 &1768436173
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4119,11 +4119,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3902107670554478213, guid: 9a102dfe5061caf439ef406fb9671064,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 3902107670554478211, guid: 9a102dfe5061caf439ef406fb9671064,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4181,14 +4176,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3902107670554478209, guid: 9a102dfe5061caf439ef406fb9671064,
         type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1553272154}
-    - target: {fileID: 3902107670554478209, guid: 9a102dfe5061caf439ef406fb9671064,
-        type: 3}
       propertyPath: text
       value: 
       objectReference: {fileID: 138331628}
+    - target: {fileID: 3902107670554478209, guid: 9a102dfe5061caf439ef406fb9671064,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1553272154}
+    - target: {fileID: 954112359, guid: 9a102dfe5061caf439ef406fb9671064, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1768436172}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a102dfe5061caf439ef406fb9671064, type: 3}
 --- !u!1001 &8622179066200236754

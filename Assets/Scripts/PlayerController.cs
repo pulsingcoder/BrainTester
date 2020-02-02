@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     Text text;
-    
+    static float[] order = { 0, 0, 0, 0, 0, 0 };
+    [SerializeField]
+    int index;
     static float score=0f;
     float lastmoveV;
     float lastmoveH;
@@ -127,7 +129,27 @@ public class PlayerController : MonoBehaviour
     }
     public void Score()
     {
-        score += 10;
-        
+        if (index == 0)
+        {
+            score += 10;
+            order[index] = 1;
+        }
+        else
+        {
+            if (order[index - 1] == 1)
+            {
+                score += 10;
+                order[index] = 1;
+            }
+            else
+            {
+                score -= 5;
+            }
+        }
+        if (score < 0)
+        {
+            score = 0;
+        }
+
     }
 }
