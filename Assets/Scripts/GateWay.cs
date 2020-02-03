@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GateWay : MonoBehaviour
 {
     [SerializeField]
+    AudioSource audio;
+    [SerializeField]
     GameObject house;
     char Charactor;
     // Start is called before the first frame update
@@ -26,7 +28,7 @@ public class GateWay : MonoBehaviour
         char ch;
         switch (tag)
         {
-            case "HouseA": ch = 'A'; SceneManager.LoadScene(1); break;
+            case "HouseA": ch = 'A'; audio.Play(); SceneManager.LoadScene(1); break;
             case "HouseB": ch = 'B'; SceneManager.LoadScene(2); break;
             case "HouseC": ch = 'C'; SceneManager.LoadScene(3); break;
             case "House1": ch = '1'; SceneManager.LoadScene(4); break;
